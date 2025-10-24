@@ -11,9 +11,9 @@ $(\eta, Y_e, T\,[\mathrm{MeV}], n_B\,[\mathrm{fm}^{-3}])$.
 
 **Grid sampling**
 
-- **Temperatures:** $T=\{0.1,10,20,30,40,50,60\}\,\mathrm{MeV}$
-- **Electron fractions:** $Y_e \in \{0.1,0.25,0.4\}$
-- **Mixing parameter:** $\eta \in \{0,0.1,0.3,0.6,1\}$
+- **Temperatures:** $T \in (0.1,10,20,30,40,50,60) \mathrm{MeV}$
+- **Electron fractions:** $Y_e \in (0.1,0.25,0.4)$
+- **Mixing parameter:** $\eta \in (0,0.1,0.3,0.6,1)$
 - **Baryon density grid (uniform):**
 
   $$n_B \in [n_{B,i}, n_{B,f}] = [0.1\,n_0, 12\,n_0], \qquad
@@ -42,6 +42,6 @@ $(\eta, Y_e, T\,[\mathrm{MeV}], n_B\,[\mathrm{fm}^{-3}])$.
 15. `cp_per_baryon` — \(c_p/n_B\) (per baryon)  
 16. `ca2` — adiabatic sound speed squared \(c_a^2\)
 
-_Units:_ natural units with \(\hbar=c=k_B=1\); 
+_Units:_ natural units with $\hbar=c=k_B=1$; 
 
 ---
