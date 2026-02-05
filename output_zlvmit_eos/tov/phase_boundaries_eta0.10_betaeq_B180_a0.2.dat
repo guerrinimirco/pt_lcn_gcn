@@ -1,0 +1,7 @@
+# ZL+vMIT Phase Boundaries
+# eta = 0.10
+# eq_mode = beta
+# ZL params: ZL_Constantinou
+# vMIT params: B^1/4=180.0 MeV, a=0.2 fm^2
+# Columns: T n_B_onset n_B_offset conv mu_p_H mu_n_H mu_u_Q mu_d_Q mu_s_Q mu_eL_H mu_eL_Q mu_eG n_p_H n_n_H n_u_Q n_d_Q n_s_Q
+    0.0000 5.564243e-01 1.694548e+00  1    1066.6044    1328.5061     317.9317     505.2872     505.2872     261.9017    -483.5602     261.9017 7.896453e-02 4.774598e-01 1.777514e-01 1.014726e+00 8.318252e-01
