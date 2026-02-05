@@ -7,7 +7,8 @@
 #   ./sync_from_eos_codes.sh /path/to/eos-codes  # custom source path
 #
 # This copies the 17 files (16 .py + 1 notebook) needed to run
-# notebook_ZLvMIT_hybrid.ipynb from the eos-codes repository.
+# notebook_ZLvMIT_hybrid.ipynb from the eos-codes repository,
+# plus the output/zlvmit_eos/ data folder.
 # ============================================================================
 
 set -e
@@ -80,4 +81,14 @@ echo "Done: $copied files copied, $missing missing."
 if [ "$missing" -gt 0 ]; then
     echo "WARNING: Some files were not found in $SRC"
     exit 1
+fi
+
+# Sync output data folder
+echo ""
+echo "Syncing output/zlvmit_eos/ ..."
+if [ -d "$SRC/output/zlvmit_eos" ]; then
+    rsync -av --delete "$SRC/output/zlvmit_eos/" "$DST/output_zlvmit_eos/"
+    echo "  [OK] output/zlvmit_eos/ -> output_zlvmit_eos/"
+else
+    echo "  [MISSING] output/zlvmit_eos/ not found in $SRC"
 fi
